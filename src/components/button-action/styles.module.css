@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.green {
+    background-color: rgb(87, 189, 155); 
+}
+
+.red {
+    background-color: rgb(189, 99, 87);
+}
+
+.green, .red{
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    padding: 10px;
+}
+
+.green:hover, .red:hover{
+    opacity: 0.8;
+
+}
