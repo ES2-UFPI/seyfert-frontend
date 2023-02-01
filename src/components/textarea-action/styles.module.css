@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.divtextarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textarea {
+    resize: none;
+    border: none;
+    width: 98%;
+    color: rgb(104, 105, 105);
+}
+
+.textarea:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-color: rgb(226, 231, 236);
+    outline: 0;
+}
+
+.group_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+

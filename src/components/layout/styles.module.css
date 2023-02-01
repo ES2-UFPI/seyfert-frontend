@@ -1,0 +1,33 @@
+.grid {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(228, 227, 227);
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 15vh;
+    grid-template-areas:
+		"header header"
+		"content siderigth";
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 40px;
+}
+
+.siderigth {
+    grid-area: siderigth;
+}
+
+.content {
+	grid-area: content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
