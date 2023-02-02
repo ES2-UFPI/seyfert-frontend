@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { AxiosResponse } from 'axios';
 import styles from './styles.module.css';
 
+
 type VizualizarConsultaProps = {
     consultaUuid: string
 }

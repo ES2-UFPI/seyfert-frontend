@@ -1,0 +1,26 @@
+[33mcommit d287b32d779f97ed62cbbd213c0d10862c817780[m[33m ([m[1;36mHEAD -> [m[1;32mdev_sprint01[m[33m)[m
+Author: Felipe Santiago Gama <felipes4ntiago@hotmail.com>
+Date:   Wed Feb 1 21:02:01 2023 -0300
+
+    Criação da tela de Listagem de Consultas, visão do médico
+
+[33mcommit df7dc3178b5b39adb69c26559136fe17d34869c2[m[33m ([m[1;31morigin/dev_sprint01[m[33m)[m
+Author: Járdesson Ribeiro <jardesson.santos@maida.health>
+Date:   Tue Jan 31 08:23:19 2023 -0300
+
+    dev_sprint01
+    Adicionado axios para requisição com o backend
+
+[33mcommit b0d5737a97851941af69a5c7ee1e94dc981b6465[m
+Author: Járdesson Ribeiro <jardesson.santos@maida.health>
+Date:   Mon Jan 30 10:55:35 2023 -0300
+
+    dev_sprint01
+    Adicionada tela de vizualização de consulta
+    close issue #17
+
+[33mcommit 4fed7516f2e04473162c1ec83b596f70342a13f1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/dev[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Járdesson Ribeiro <jardesson.santos@maida.health>
+Date:   Fri Jan 20 23:51:49 2023 -0300
+
+    Initial commit from Create Next App
