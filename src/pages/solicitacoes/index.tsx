@@ -1,4 +1,6 @@
 import CadastrarSolicitacaoTemplate from "@/templates/CadastroSolicitacao";
+import VisualizarConsultaTemplate from "@/templates/VisualizarConsultaTemplate";
+import { GetServerSideProps } from "next";
 
 const CadastrarSolicitacao = () => {
     return <CadastrarSolicitacaoTemplate />;
