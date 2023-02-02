@@ -77,7 +77,7 @@ const VisualizarConsultaTemplate = ({ consultaUuid }: VizualizarConsultaProps) =
                         <span className={styles.title_board}>Comentário Médico</span>
                     </div>
                     <div className={styles.content_board}>
-                        <TextArea context="PACIENTE" ></TextArea>
+                        <TextArea context="MEDICO" ></TextArea>
                     </div>
                 </div>
             </div>
