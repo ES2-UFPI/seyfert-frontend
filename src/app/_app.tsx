@@ -3,7 +3,6 @@ import '@nextcss/reset';
 import { NextPage } from "next";
 import { AppProps } from "next/app";
 import { ReactElement, ReactNode } from "react";
-import Layout from '@/components/layout/Layout';
 import 'bootstrap/dist/css/bootstrap.css'
 import  SSRProvider  from 'react-bootstrap/SSRProvider';
 
