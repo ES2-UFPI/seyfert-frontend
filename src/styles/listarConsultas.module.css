@@ -1,0 +1,14 @@
+.elementoTabela {
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.tabela {
+  margin: 20px;
+  width: 95%;
+}
+
+.linhaTabela {
+  background-color: rgb(233, 211, 179);
+  border: 1px solid black;
+}
