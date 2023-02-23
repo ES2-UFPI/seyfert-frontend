@@ -1,4 +1,4 @@
-import Layout from "@/components/layout/Layout";
+import Layout from "@/templates/layout/Layout";
 import { SeyfertSolicitacaoRequestService } from "@/services/SeyfertSolicitacaoRequestService";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
