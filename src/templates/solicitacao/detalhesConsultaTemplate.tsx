@@ -34,7 +34,6 @@ const DetalhesConsultaTemplate = ({id}:props) => {
                 <li>Horário do início:  10:00</li>
                 <li>Horário do fim: 11:00</li>
                 <li>Descrição da consulta: <p>Desde o dia 13/05 desse ano vim sentindo fortes dores nas costas, e a situação vem piorando desde que...</p></li>
-                <li>Valor da consulta:  500 Reais</li>
 
 
             </ul>

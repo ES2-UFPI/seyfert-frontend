@@ -1,0 +1,22 @@
+.Footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Footer a{
+    text-decoration: none;
+   
+    transition: 0.3s;
+    margin-right: 1em;
+
+}
+
+.Footer a:hover{
+    color:#999;
+}
