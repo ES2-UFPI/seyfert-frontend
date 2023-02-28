@@ -1,4 +1,4 @@
-import Layout from "@/templates/layout/Layout"
+import Layout from "@/components/layout/Layout"
 import styles from "../../styles/visualizacaoDeSolicitacao.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Link from "next/link"
@@ -11,7 +11,7 @@ import { AxiosResponse } from "axios"
 type props = {
     id: string
 }
-const DetalhesConsultaTemplate = ({id}:props) => {
+const criarPropostaTemplate = ({id}:props) => {
     const [consultaResponse, setConsultaResponse] = useState<VisualizarConsultaResponse>();
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const DetalhesConsultaTemplate = ({id}:props) => {
         })
     }, [id]);
     return(
-        <Layout titleHeader="Detalhamento da solicitação de consulta">
+        <Layout titleHeader="Criação de proposta">
         <div>
             <h1>Consulta</h1>
             <ul>
@@ -34,11 +34,12 @@ const DetalhesConsultaTemplate = ({id}:props) => {
                 <li>Horário do início:  10:00</li>
                 <li>Horário do fim: 11:00</li>
                 <li>Descrição da consulta: <p>Desde o dia 13/05 desse ano vim sentindo fortes dores nas costas, e a situação vem piorando desde que...</p></li>
+                <li>Valor da consulta:  <input type="text" id="numero" ></input> </li>
 
 
             </ul>
             {/* onClick={mudarPagina} */}
-            <button  name="button">Criar proposta de consulta</button>
+            <button  name="button">Confirmar proposta de consulta</button>
         </div>
         </Layout>
 
@@ -46,4 +47,4 @@ const DetalhesConsultaTemplate = ({id}:props) => {
 }
 
 
-export default DetalhesConsultaTemplate
+export default criarPropostaTemplate
