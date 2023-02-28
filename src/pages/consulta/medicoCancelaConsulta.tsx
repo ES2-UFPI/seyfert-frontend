@@ -7,7 +7,25 @@ export default function medicoCancelaConsulta(){
     return(
     <>
     <table>
-        
+        <tr>
+            <td>Dia da consulta</td>
+            <td>Horário</td>
+            <td>Valor</td>
+
+
+        </tr>
+        <tr>
+            <td>dia</td>
+            <td>hora</td>
+            <td>valor em reais</td>
+
+
+        </tr>
+        <tr>
+            <td><input type = "text" value = "Motivo do cancelamento:"  /></td>
+            <td><input type = "submit"/></td>
+        </tr>
+
 
 
     </table>
