@@ -7,6 +7,7 @@ export default function medicoCancelaConsulta(){
     return(
     <>
     <table>
+        <tbody>
         <tr>
             <td>Dia da consulta</td>
             <td>Horário</td>
@@ -27,7 +28,7 @@ export default function medicoCancelaConsulta(){
         </tr>
 
 
-
+        </tbody>
     </table>
     </>
     )
