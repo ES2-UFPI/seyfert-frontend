@@ -1,5 +1,4 @@
 import HistoricoConsultaTemplate from "@/templates/historicoConsulta";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const historicoConsulta = () => {
   return <HistoricoConsultaTemplate />;

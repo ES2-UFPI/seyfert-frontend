@@ -1,6 +1,5 @@
 import Layout from "@/templates/layout/Layout";
 import styles from "../../styles/listarPropostas.module.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

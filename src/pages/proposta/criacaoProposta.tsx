@@ -1,26 +1,10 @@
-import { NextPageWithLayout } from "@/app/_app";
-import criarPropostaTemplate from "@/templates/CadastroProposta/criarPropostaTemplate";
-import { GetServerSideProps } from "next";
+/*Uma proposta consite em:  Valor da consulta, Data da consulta, hora inicial, hora final , medico, solicitação, situação proposta */
 
-type props = {
-    id: string
+export default function criacaoProposta(){
+
+    return(
+        <>
+        <h1>Criacao de Proposta</h1>
+        </>
+    )
 }
-
-const criarProposta = ({ id }: props) => {
-    return <criarPropostaTemplate id= {id} />
-}
-
-criarProposta.getLayout = function getLayout(page: JSX.Element){
-    return page;
-}
-
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-    const id = ctx.query?.id
-    return {
-        props: {
-            id
-        }
-    }
-}
-
-export default criarProposta;
