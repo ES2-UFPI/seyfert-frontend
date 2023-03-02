@@ -21,6 +21,8 @@ const VisualizacaoDeSolicitacaoTemplate = () => {
         uuidSolicitacao: "2207d113-9496-4bf2-800a-dce95d489144"
     };
 
+    const tipoUsuario = "MEDICO";
+
     const registros = [registroFake1, registroFake2, registroFake1]
 
     const [registrosPropostas, updateRegistrosPropostas] = useState<any[]>(registros);
@@ -62,8 +64,7 @@ const VisualizacaoDeSolicitacaoTemplate = () => {
                     })}
                 </tbody>
             </table>
-
-  </div>
+        </div>
   </Layout>
 
     )
