@@ -2,7 +2,7 @@
   width: 90%;
   margin: auto;
   border-collapse: collapse;
-  border-spacing: 30px;
+  text-align: center;
 }
 
 .coluna {
@@ -27,4 +27,19 @@
   font-weight: 600;
   cursor: pointer;
   margin-top: 1rem;
+  width: 100px;
+}
+
+.diaSemana {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
 }

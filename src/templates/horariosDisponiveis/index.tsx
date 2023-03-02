@@ -9,100 +9,165 @@ const HorariosDisponiveisTemplate = () => {
   return (
     <Layout titleHeader="Horarios Disponiveis">
       <div>
-        <table className={styles.tabela}>
+        <table className={styles.tabela} border={1}>
           <tbody>
             <tr>
-              <td colSpan={6}>
-                <center>
-                  <p className={styles.data}>08/02/2023</p>
-                </center>
+              <td>
+                <table width={"100%"}>
+                  <tbody>
+                    <tr>
+                      <td colSpan={4} className={styles.titulo}>
+                        Cadastrar Novo Horário
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width={"20%"}>
+                        <h4>Dia da Semana</h4>
+                      </td>
+                      <td width={"25%"}>
+                        <h4>Horário Início</h4>
+                      </td>
+                      <td width={"25%"}>
+                        <h4>Horário Fim</h4>
+                      </td>
+                      <td width={"30%"}>
+                        <h4>Valor</h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select>
+                          <option value="1">Domingo</option>
+                          <option value="2">Segunda</option>
+                          <option value="3">Terça</option>
+                          <option value="4">Quarta</option>
+                          <option value="5">Quinta</option>
+                          <option value="6">Sexta</option>
+                          <option value="7">Sábado</option>
+                        </select>
+                      </td>
+                      <td>
+                        <input type="time" />
+                      </td>
+                      <td>
+                        <input type="time" />
+                      </td>
+                      <td>
+                        <input type="text" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colSpan={4}>
+                        <center>
+                          <button className={styles.botao}>Cadastrar</button>
+                        </center>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </td>
             </tr>
             <tr>
-              <td width={"25%"} className={styles.coluna}>
-                <h4>Médico</h4>
-              </td>
-              <td width={"13%"} className={styles.coluna}>
-                <h4>Especialidade</h4>
-              </td>
-              <td width={"13%"} className={styles.coluna}>
-                <h4>Horário</h4>
-              </td>
-              <td width={"13%"} className={styles.coluna}>
-                <h4>Valor</h4>
-              </td>
-              <td width={"26%"} className={styles.coluna}>
-                <h4>Diagnóstico</h4>
-              </td>
-            </tr>
-            <tr>
-              <td className={styles.coluna}>João da Silva Silveira</td>
-              <td className={styles.coluna}>Oftalmologista</td>
-              <td className={styles.coluna}>11:20</td>
-              <td className={styles.coluna}>Retorno</td>
-              <td className={styles.coluna}>
-                O paciente está continua com um cisco no olho
-              </td>
-              <td className={styles.coluna}>
-                <button className={styles.botao}>Visualizar Consulta</button>
-              </td>
-            </tr>
-            <tr>
-              <td className={styles.coluna}>Mariana Santana dos Santos</td>
-              <td className={styles.coluna}>Psicóloga</td>
-              <td className={styles.coluna}>09:00</td>
-              <td className={styles.coluna}>R$200,00</td>
-              <td className={styles.coluna}>O paciente parece ser paranóico</td>
-              <td className={styles.coluna}>
-                <button className={styles.botao}>Visualizar Consulta</button>
-              </td>
-            </tr>
-            <tr>
-              <td className={styles.coluna}>Joaquim de Aquino</td>
-              <td className={styles.coluna}>Cardiologista</td>
-              <td className={styles.coluna}>18:00</td>
-              <td className={styles.coluna}>R$120,00</td>
-              <td className={styles.coluna}>
-                O paciente está com o coração em bom estado
-              </td>
-              <td className={styles.coluna}>
-                <button className={styles.botao}>Visualizar Consulta</button>
-              </td>
-            </tr>
-            <tr>
-              <td colSpan={6}>
-                <center>
-                  <p className={styles.data}>01/02/2023</p>
-                </center>
-              </td>
-            </tr>
-            <tr>
-              <td width={"25%"} className={styles.coluna}>
-                <h4>Médico</h4>
-              </td>
-              <td width={"13%"} className={styles.coluna}>
-                <h4>Especialidade</h4>
-              </td>
-              <td width={"13%"} className={styles.coluna}>
-                <h4>Horário</h4>
-              </td>
-              <td width={"13%"} className={styles.coluna}>
-                <h4>Valor</h4>
-              </td>
-              <td width={"26%"} className={styles.coluna}>
-                <h4>Diagnóstico</h4>
-              </td>
-            </tr>
-            <tr>
-              <td className={styles.coluna}>João da Silva Silveira</td>
-              <td className={styles.coluna}>Oftalmologista</td>
-              <td className={styles.coluna}>16:40</td>
-              <td className={styles.coluna}>R$150,00</td>
-              <td className={styles.coluna}>
-                O paciente está com um cisco no olho
-              </td>
-              <td className={styles.coluna}>
-                <button className={styles.botao}>Visualizar Consulta</button>
+              <td>
+                <table width={"100%"}>
+                  <tbody>
+                    <tr>
+                      <td colSpan={7} className={styles.titulo}>
+                        Horário Cadastrados
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className={styles.coluna}>
+                        <p className={styles.diaSemana}>Domingo</p>
+                      </td>
+                      <td className={styles.coluna}>
+                        <p className={styles.diaSemana}>Segunda</p>
+                      </td>
+                      <td className={styles.coluna}>
+                        <p className={styles.diaSemana}>Terça</p>
+                      </td>
+                      <td className={styles.coluna}>
+                        <p className={styles.diaSemana}>Quarta</p>
+                      </td>
+                      <td className={styles.coluna}>
+                        <p className={styles.diaSemana}>Quinta</p>
+                      </td>
+                      <td className={styles.coluna}>
+                        <p className={styles.diaSemana}>Sexta</p>
+                      </td>
+                      <td className={styles.coluna}>
+                        <p className={styles.diaSemana}>Sábado</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className={styles.botao}>
+                          14:00 - 16:00 por R$ 250
+                        </button>
+                      </td>
+                      <td>
+                        <button className={styles.botao}>
+                          8:00 - 12:00 por R$ 150
+                        </button>
+                      </td>
+                      <td>
+                        <button className={styles.botao}>
+                          8:00 - 12:00 por R$ 150
+                        </button>
+                      </td>
+                      <td>
+                        <button className={styles.botao}>
+                          8:00 - 12:00 por R$ 150
+                        </button>
+                      </td>
+                      <td>
+                        <button className={styles.botao}>
+                          8:00 - 12:00 por R$ 150
+                        </button>
+                      </td>
+                      <td>
+                        <button className={styles.botao}>
+                          8:00 - 12:00 por R$ 150
+                        </button>
+                      </td>
+                      <td>
+                        <button className={styles.botao}>
+                          14:00 - 16:00 por R$ 250
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <button className={styles.botao}>
+                          14:00 - 16:00 por R$ 150
+                        </button>
+                      </td>
+                      <td></td>
+                      <td>
+                        <button className={styles.botao}>
+                          14:00 - 16:00 por R$ 150
+                        </button>
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <button className={styles.botao}>
+                          18:00 - 20:00 por R$ 200
+                        </button>
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
               </td>
             </tr>
           </tbody>
