@@ -1,4 +1,3 @@
-import { NextPageWithLayout } from "@/app/_app";
 import DetalhesConsultaTemplate from "@/templates/solicitacao/detalhesConsultaTemplate";
 import { GetServerSideProps } from "next";
 

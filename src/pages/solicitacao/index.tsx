@@ -1,6 +1,5 @@
 import VisualizacaoDeSolicitacaoTemplate from "@/templates/solicitacao";
 
-
 const VisualizarSolicitacoes = () => {
     return <VisualizacaoDeSolicitacaoTemplate />
 }
