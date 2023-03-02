@@ -42,7 +42,7 @@ const CadastrarSolicitacaoTemplate = () => {
             </td>
             <td>
               <input className={styles.input} id="especi" list="especialidade" onChange={e => setEspecialidade(e.target.value)} required />
-              <datalist id="especialidade" >
+              <datalist id="especialidade">
                 <option value="Clínico Geral" />
                 <option value="Cardiologista" />
                 <option value="Oftalmologista" />
