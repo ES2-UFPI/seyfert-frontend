@@ -1,5 +1,4 @@
-import { NextPageWithLayout } from "@/app/_app";
-import VisualizarConsultaTemplate from "@/templates/VisualizarConsultaTemplate";
+import VisualizarConsultaTemplate from "@/templates/visualizar-consulta-template";
 import { GetServerSideProps } from "next";
 
 type props = {

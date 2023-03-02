@@ -1,13 +1,12 @@
 .grid {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(228, 227, 227);
+    max-width: 1400px;
+    background-color: rgb(246, 246, 249);
     display: grid;
-    grid-template-columns: 10fr 1fr;
-    grid-template-rows: 15vh;
     grid-template-areas:
-		"header header"
-		"content siderigth";
+		"header"
+		"content";
 }
 
 .header {
@@ -18,10 +17,7 @@
     align-items: center;
     flex-direction: row;
     padding-left: 40px;
-}
-
-.siderigth {
-    grid-area: siderigth;
+    height: 15vh;
 }
 
 .content {

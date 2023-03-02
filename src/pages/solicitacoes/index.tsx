@@ -1,4 +1,4 @@
-import CadastrarSolicitacaoTemplate from "@/templates/CadastroSolicitacao";
+import CadastrarSolicitacaoTemplate from "@/templates/cadastro-solicitacao";
 
 const CadastrarSolicitacao = () => {
     return <CadastrarSolicitacaoTemplate />;

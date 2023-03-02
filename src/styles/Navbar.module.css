@@ -1,0 +1,17 @@
+.Navbar{
+    display: flex;
+    padding: 20px 10px;
+    background-color: black;
+}
+
+.Navbar a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    margin-right: 1em;
+
+}
+.Navbar a:hover{
+    color: #999;
+
+}
