@@ -9,7 +9,7 @@ const HistoricoConsultaTemplate = () => {
   return (
     <Layout titleHeader="Histórico de Consultas">
       <div>
-        <table border={1} className={styles.tabela}>
+        <table className={styles.tabela}>
           <tbody>
             <tr>
               <td colSpan={6}>
