@@ -1,5 +1,6 @@
 import Layout from "@/templates/layout/Layout"
 import styles from "../../styles/visualizacaoDeSolicitacao.module.css"
+import Link from "next/link"
 import { useRouter } from "next/router"
 import { useState } from "react"
 

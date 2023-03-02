@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://felipes4ntiago.github.io/ES2-UFPI/seyfert-frontend/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

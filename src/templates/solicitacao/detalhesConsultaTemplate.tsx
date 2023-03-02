@@ -1,4 +1,8 @@
 import Layout from "@/templates/layout/Layout"
+
+import styles from "../../styles/visualizacaoDeSolicitacao.module.css"
+import Link from "next/link"
+import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { SeyfertConsultaRequestService } from "@/services/SeyfertConsultaRequestServicec"
 import { VisualizarConsultaResponse } from "@/types/consulta/VisualizarConsultaResponse"

@@ -1,6 +1,5 @@
-import Layout from "@/components/layout/Layout"
+
 import styles from "../../styles/visualizacaoDeSolicitacao.module.css"
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
@@ -25,7 +24,7 @@ const criarPropostaTemplate = ({id}:props) => {
         })
     }, [id]);
     return(
-        <Layout titleHeader="Criação de proposta">
+       // <Layout titleHeader="Criação de proposta">
         <div>
             <h1>Consulta</h1>
             <ul>
@@ -41,7 +40,7 @@ const criarPropostaTemplate = ({id}:props) => {
             {/* onClick={mudarPagina} */}
             <button  name="button">Confirmar proposta de consulta</button>
         </div>
-        </Layout>
+       // </Layout>
 
     )
 }
