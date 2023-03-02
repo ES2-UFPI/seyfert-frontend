@@ -1,5 +1,4 @@
 import ListarPropostasTemplate from "@/templates/listarPropostas";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const listarPropostas = () => {
   return <ListarPropostasTemplate />;
