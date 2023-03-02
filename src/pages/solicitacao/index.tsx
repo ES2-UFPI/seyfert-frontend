@@ -1,6 +1,4 @@
 import VisualizacaoDeSolicitacaoTemplate from "@/templates/solicitacao";
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 
 const VisualizarSolicitacoes = () => {
     return <VisualizacaoDeSolicitacaoTemplate />
