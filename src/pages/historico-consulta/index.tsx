@@ -1,4 +1,4 @@
-import HistoricoConsultaTemplate from "@/templates/historicoConsulta";
+import HistoricoConsultaTemplate from "@/templates/historico-consulta";
 
 const historicoConsulta = () => {
   return <HistoricoConsultaTemplate />;

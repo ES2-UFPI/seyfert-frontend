@@ -1,6 +1,6 @@
 import Navbar from "./Navbar"
-import Footer from "./Footer"
-import styles from "../styles/MainContainer.module.css"
+import Footer from "./footer"
+import styles from "./MainContainer.module.css"
 import { Main } from "next/document"
 
 export default function MainContainer({children}){

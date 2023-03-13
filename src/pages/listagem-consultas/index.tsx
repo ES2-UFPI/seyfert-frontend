@@ -1,4 +1,4 @@
-import ListarConsultasTemplate from "@/templates/listarConsultas";
+import ListarConsultasTemplate from "@/templates/listar-consultas";
 
 const listarConsultas = () => {
   return <ListarConsultasTemplate />;

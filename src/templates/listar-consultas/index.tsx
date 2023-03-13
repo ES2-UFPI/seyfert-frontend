@@ -1,5 +1,5 @@
 import Layout from "@/templates/layout/Layout";
-import styles from "../../styles/listarConsultas.module.css";
+import styles from "./listarConsultas.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

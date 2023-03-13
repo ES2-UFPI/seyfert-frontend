@@ -1,13 +1,13 @@
 import Layout from "@/templates/layout/Layout";
-import styles from "../../styles/historicoConsulta.module.css";
+import styles from "./horariosDisponiveis.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const HistoricoConsultaTemplate = () => {
+const HorariosDisponiveisTemplate = () => {
   const route = useRouter();
 
   return (
-    <Layout titleHeader="Histórico de Consultas">
+    <Layout titleHeader="Horarios Disponiveis">
       <div>
         <table className={styles.tabela}>
           <tbody>
@@ -112,4 +112,4 @@ const HistoricoConsultaTemplate = () => {
   );
 };
 
-export default HistoricoConsultaTemplate;
+export default HorariosDisponiveisTemplate;

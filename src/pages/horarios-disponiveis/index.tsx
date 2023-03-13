@@ -1,4 +1,4 @@
-import HorariosDisponiveisTemplate from "@/templates/horariosDisponiveis";
+import HorariosDisponiveisTemplate from "@/templates/horarios-disponiveis";
 
 const HorariosDisponiveis = () => {
   return <HorariosDisponiveisTemplate />;
