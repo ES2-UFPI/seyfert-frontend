@@ -1,14 +1,7 @@
 .container {
     min-width: 30%;
     display: flex;
-    align-items: flex-start;
-    justify-content: left;
     flex-direction: column;
-}
-
-.content_container{
-    min-width: 95%;
-    max-width: 300px;
 }
 
 .title {
