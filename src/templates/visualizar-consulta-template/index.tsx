@@ -1,5 +1,5 @@
 import ButtonAction from '@/components/button-action';
-import Label from '@/components/label';
+import Label from '@/components/label-title-top';
 import Layout from '@/templates/layout/Layout';
 import TextArea from '@/components/textarea-action';
 import { SeyfertConsultaRequestService } from '@/services/SeyfertConsultaRequestServicec';

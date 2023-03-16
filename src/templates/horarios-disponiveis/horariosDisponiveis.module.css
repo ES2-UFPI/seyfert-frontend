@@ -1,30 +1,73 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+  
+.container_search {
+  background-color: rgb(255, 255, 255);
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.inputs_search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.area_button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+.container_list {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .tabela {
-  width: 90%;
-  margin: auto;
-  border-collapse: collapse;
-  border-spacing: 30px;
+  width: 100%;
+}
+.table_top {
+  text-align: left;
+}
+.tdcontent_button {
+  text-align: right;
+}
+.tbody_line {
+  height: 40px;
+  background-color: rgb(215, 215, 216);
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
 }
 
-.coluna {
-  padding: 0.5rem;
-  text-align: center;
+.container_pagination {
+  width: 100% ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
-
-.data {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 0.5rem;
-}
-
-.botao {
-  background-color: #c6d4f3;
-  color: #000;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 1rem;
+.container_pagination .pagination .pagination_element{
+  width: 40px;
+  padding: 5px;
+  margin-right: 10px;
 }

@@ -27,7 +27,6 @@ export default function medicoCancelaConsulta(){
             <td><input type = "submit"/></td>
         </tr>
 
-
         </tbody>
     </table>
     </>
