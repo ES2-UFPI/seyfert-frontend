@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 100vh;
     max-width: 1400px;
+    /* background-color: var(--primary-color-light); */
     background-color: rgb(246, 246, 249);
     display: grid;
     grid-template-areas:
