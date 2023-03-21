@@ -2,27 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: red;
 }
 
 :root {
-  --backgroud: rgb(228, 227, 227);
-  --primary-color: #0f151c;
-  --primary-color-light: #18293a;
-  --secundary-color: #491c4a;
-  --secundary-color-hover: #3b163c;
-  --secundary-color-light: #752c77;
-  --white: #fffbfb;
-  --gray: #474646;
-  --orange: #ff7517;
-  --orange-hover: #bb5815;
-  --green: #058646;
+  --backgroud: rgb(23, 107, 175);
+  --backgroud-home: rgb(214, 222, 255);
+  --border-color: rgb(168, 168, 168);
+  --text-color: rgb(73, 72, 72);
+  --text-color-link: rgb(26, 50, 185);
+  --text-home-color: rgb(59, 99, 160);
+  --backgroud-button-color: rgb(67, 113, 182);
 }
 
-
-body {
-  background-color: red;
+button, input, textarea {
+    border-style: none;
 }
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
+
 @media(max-width: 700px) {
   html{
       font-size: 50%;

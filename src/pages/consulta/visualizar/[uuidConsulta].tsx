@@ -1,12 +1,13 @@
 import ButtonAction from '@/components/button-action';
 import Label from '@/components/label';
-import Layout from '@/templates/layout/Layout';
+import Layout from '@/layout/Layout';
 import TextArea from '@/components/textarea-action';
 import { SeyfertConsultaRequestService } from '@/services/SeyfertConsultaRequestServicec';
 import { VisualizarConsultaResponse } from '@/types/consulta/VisualizarConsultaResponse';
 import { useEffect, useState } from 'react';
 import { AxiosResponse } from 'axios';
 import styles from './styles.module.css';
+import { GetServerSideProps } from 'next';
 
 
 type VizualizarConsultaProps = {
@@ -97,6 +98,15 @@ const VisualizarConsultaTemplate = ({ consultaUuid }: VizualizarConsultaProps) =
         </Layout>
         
     );
+}
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+    const id = ctx.query?.uuidConsulta
+    return {
+        props: {
+            consultaUuid: id
+        }
+    }
 }
 
 export default VisualizarConsultaTemplate;
