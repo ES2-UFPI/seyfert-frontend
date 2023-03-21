@@ -1,18 +1,20 @@
-import ButtonAction from "@/components/button-action";
-import Label from "@/components/label";
-import TextArea from "@/components/textarea-action";
-import Layout from "@/layout/Layout";
-import VisualizarConsultaTemplate from "@/templates/visualizar-consulta-template";
-import { VisualizarConsultaResponse } from "@/types/consulta/VisualizarConsultaResponse";
-import { GetServerSideProps } from "next";
-import { useState } from "react";
+import ButtonAction from '@/components/button-action';
+import Label from '@/components/label';
+import Layout from '@/layout/Layout';
+import TextArea from '@/components/textarea-action';
+import { SeyfertConsultaRequestService } from '@/services/SeyfertConsultaRequestServicec';
+import { VisualizarConsultaResponse } from '@/types/consulta/VisualizarConsultaResponse';
+import { useEffect, useState } from 'react';
+import { AxiosResponse } from 'axios';
 import styles from './styles.module.css';
+import { GetServerSideProps } from 'next';
+
 
 type VizualizarConsultaProps = {
     consultaUuid: string
 }
 
-const VisualizarConsulta = ({ consultaUuid }: VizualizarConsultaProps) => {
+const VisualizarConsultaTemplate = ({ consultaUuid }: VizualizarConsultaProps) => {
 
     const [consultaResponse, setConsultaResponse] = useState<VisualizarConsultaResponse>();
     const [textAreaValor, setTextAreaValor] = useState<string>("");
@@ -99,7 +101,7 @@ const VisualizarConsulta = ({ consultaUuid }: VizualizarConsultaProps) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-    const id = ctx.query?.uuidconsulta
+    const id = ctx.query?.uuidConsulta
     return {
         props: {
             consultaUuid: id
@@ -107,4 +109,4 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     }
 }
 
-export default VisualizarConsulta;
+export default VisualizarConsultaTemplate;
