@@ -9,16 +9,18 @@ interface ButtonProps {
 
 const ButtonComponent = ({ onClick, color, childrenColor, children }: ButtonProps) => {
     return (
-        <button 
-            className={styles.button}
-            style={{
-                backgroundColor: color,
-                color: childrenColor
-            }}
-            onClick={onClick}
-        >
-            {children}
-        </button>
+        <>
+            <button 
+                className={styles.button}
+                style={{
+                    backgroundColor: color,
+                    color: childrenColor
+                }}
+                onClick={onClick}
+            >
+                {children}
+            </button>
+        </>
     );
 }
 

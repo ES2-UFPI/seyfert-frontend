@@ -30,26 +30,26 @@ const PagamentoConsulta = ({ uuidConsulta } : PagamentoConsultaProps) => {
             return <PagamentoPix />
         }
         if(tipoPagamento == opcoesPagamento[2]){
-            return (<><p>Tipo de pagamento {tipoPagamento}</p></>);
+            return (<div><p>Tipo de pagamento {tipoPagamento}</p></div>);
         }
     }
 
     return (
         <Layout title="Pagamento da consulta" titleHeader="Pagamento da consulta">
             <div className={styles.container}>
+                <p>{uuidConsulta}</p>
                 <div >
                     <div className={styles.area_pagamento}>
                         <div className={styles.area_pagamento_top}>
                             {opcoesPagamento.map((elemento, index) => {
                             return (
-                                <div>
-                                    <ButtonComponent 
-                                        onClick={(e: any) => alterarValor(elemento)} 
-                                        color={compare(elemento, opcaoPagamentoEscolhido) ? "rgb(29, 66, 230)" : "rgb(177, 177, 177)"} 
-                                        childrenColor="rgb(56, 56, 56)">
-                                        {elemento}
-                                    </ButtonComponent>
-                                </div>
+                                <ButtonComponent 
+                                    key={index}
+                                    onClick={(e: any) => alterarValor(elemento)} 
+                                    color={compare(elemento, opcaoPagamentoEscolhido) ? "rgb(29, 66, 230)" : "rgb(177, 177, 177)"} 
+                                    childrenColor="rgb(56, 56, 56)">
+                                    {elemento}
+                                </ButtonComponent>
                             )})}
                         </div>
                         <div className={styles.area_pagamento_body}>
