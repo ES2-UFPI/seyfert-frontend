@@ -22,10 +22,18 @@ const CadastroPaciente = () => {
     <Layout titleHeader="Cadastro de Pacientes" title="Cadastro de Pacientes">
       <div className={styles.container}>
         <span>
-          <h1>Tela em Construção</h1>
+          <h1>Cadastro de Paciente</h1>
         </span>
         <div>
           <p>Informações do Paciente</p>
+          <input placeholder="Seu primeiro nome"></input>
+          <input placeholder="Seu sobrenome"></input>
+          <label>Data de Nascimento</label>
+          <input type="date"></input>
+          <input></input>
+          <input></input>
+          <input></input>
+          <input></input>
           <input></input>
         </div>
         <button onClick={(e) => voltar()} className={styles.botao}>
