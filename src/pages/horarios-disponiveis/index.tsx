@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import ButtonComponent from "@/components/button";
 
 
+
 const HorariosDisponiveis = () => {
   const route = useRouter();
 
@@ -49,58 +50,50 @@ const HorariosDisponiveis = () => {
           </datalist>
           <input type="time" placeholder="Horário inicial ex: 10:00"/>
           <input type="time" placeholder="Horário final ex: 11:00"/>
+          <button className={styles.botao}  style={{ marginLeft: "10px" }}>Confirmar123</button>
         </div>
-        <div className={styles.area_button}>
-            <ButtonComponent color="rgb(29, 66, 230)" childrenColor="rgb(255, 255, 255)">Confirmar</ButtonComponent>
-        </div>
+        {/* <div className={styles.area_button}>
+            <button className={styles.botao}>Confirmar123</button>
+        </div> */}
       </div>
       <div className={styles.container_list}>
-      <table className={styles.tabela}>
-          <thead className={styles.table_top}>
-            <tr>
-              <th className={styles.theader}>
-                <h4>Médico</h4>
-              </th>
-              <th className={styles.theader}>
-                <h4>Especialidade</h4>
-              </th>
-              <th className={styles.theader}>
-                <h4>Dia da semana</h4>
-              </th>
-              <th className={styles.theader}>
-                <h4>Horários</h4>
-              </th>
-              <th className={styles.theader}>
-                <h4>Valor</h4>
-              </th>
-              <th className={styles.theader}>
-                <h4>Ações</h4>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className={styles.tbody_line}>
-              <td className={styles.tdcontent}>João da Silva Silveira</td>
-              <td className={styles.tdcontent}>Oftalmologista</td>
-              <td className={styles.tdcontent}>SEGUNDA</td>
-              <td className={styles.tdcontent}>11:20 até 12:00</td>
-              <td className={styles.tdcontent}>R$ 200,00</td>
-              <td className={styles.tdcontent_button}>
-                <button onClick={e => openAgendarConsulta("b057b0a6-9f29-442f-bd0b-e51277d9fa60")} className={styles.botao}>Marcar Consulta</button>
-              </td>
-            </tr>
-            <tr className={styles.tbody_line}>
-              <td className={styles.tdcontent}>João da Silva Silveira</td>
-              <td className={styles.tdcontent}>Oftalmologista</td>
-              <td className={styles.tdcontent}>SEGUNDA</td>
-              <td className={styles.tdcontent}>11:20 até 12:00</td>
-              <td className={styles.tdcontent}>R$ 200,00</td>
-              <td className={styles.tdcontent_button}>
-                <button onClick={e => openAgendarConsulta("b057b0a6-9f29-442f-bd0b-e51277d9fa60")} className={styles.botao}>Marcar Consulta</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: 'left', backgroundColor: 'gray', color: 'white', padding: '10px' }}>Médico</th>
+      <th style={{ textAlign: 'left', backgroundColor: 'gray', color: 'white', padding: '10px' }}>Especialidade</th>
+      <th style={{ textAlign: 'left', backgroundColor: 'gray', color: 'white', padding: '10px' }}>Dia da semana</th>
+      <th style={{ textAlign: 'left', backgroundColor: 'gray', color: 'white', padding: '10px' }}>Horários</th>
+      <th style={{ textAlign: 'left', backgroundColor: 'gray', color: 'white', padding: '10px' }}>Valor</th>
+      <th style={{ textAlign: 'left', backgroundColor: 'gray', color: 'white', padding: '10px' }}>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>João da Silva Silveira</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>Oftalmologista</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>SEGUNDA</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>11:20 até 12:00</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>R$ 200,00</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>
+        <button onClick={e => openAgendarConsulta("b057b0a6-9f29-442f-bd0b-e51277d9fa60")} className={styles.botao}  style={{ backgroundColor: 'blue', color: 'white', padding: '5px 10px', border: 'none', borderRadius: '5px' }}>Marcar Consulta</button>
+      </td>
+    </tr>
+    <tr>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>João da Silva Silveira</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>Oftalmologista</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>SEGUNDA</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>11:20 até 12:00</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>R$ 200,00</td>
+      <td style={{ padding: '10px', borderBottom: '1px solid gray' }}>
+        <button onClick={e => openAgendarConsulta("b057b0a6-9f29-442f-bd0b-e51277d9fa60")} className={styles.botao} style={{ backgroundColor: 'blue', color: 'white', padding: '5px 10px', border: 'none', borderRadius: '5px' }}>Marcar Consulta</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
         <div className={styles.container_pagination}>
             <div className={styles.pagination}>
               <span className={styles.pagination_element}>1</span>
