@@ -17,15 +17,10 @@ const HorariosDisponiveis = () => {
     <Layout titleHeader="Horarios Disponiveis">
     <div className={styles.container}>
       <div className={styles.container_search}>
-        <div className={styles.inputs_search}>
-          <input type="text" placeholder="Busque por um(a) médico(a)"/>
-          <input
-            className={styles.input}
-            id="diasdasemana"
-            list="dias"
-            // onChange={(e) => alert(e.target.value)}
-          />
-          <datalist id="dias">
+        <div className={styles.inputs_search}   style={{ width: "100%", marginTop: "0px" }}>
+          <input style={{ width: "17%", marginTop: "0px" }}type="text" placeholder="Busque por um(a) médico(a)"/>
+          <input style={{ width: "17%", marginTop: "0px" }} className={styles.input} id="diasdasemana" list="dias"  /* onChange={(e) => alert(e.target.value)} *//> 
+          <datalist style={{ width: "17%", marginTop: "0px" }} id="dias">
             <option value="SEGUNDA" />
             <option value="TERCA" />
             <option value="QUARTA" />
@@ -34,23 +29,23 @@ const HorariosDisponiveis = () => {
             <option value="SABADO" />
             <option value="DOMINGO" />
           </datalist>
-          <input
+          <input style={{ width: "17%", marginTop: "0px" }}
             className={styles.input}
             id="especi"
             list="especialidade"
             // onChange={(e) => alert(e.target.value)}
             required
           />
-          <datalist id="especialidade">
+          <datalist style={{ width: "17%", marginTop: "0px" }} id="especialidade">
             <option value="Clínico Geral" />
             <option value="Cardiologista" />
             <option value="Oftalmologista" />
             <option value="Ortopedista" />
             <option value="Neurologista" />
           </datalist>
-          <input type="time" placeholder="Horário inicial ex: 10:00"/>
-          <input type="time" placeholder="Horário final ex: 11:00"/>
-          <button className={styles.botao}  style={{ marginLeft: "10px" }}>Confirmar123</button>
+          <input style={{ width: "17%", marginTop: "0px" }} type="time" placeholder="Horário inicial ex: 10:00"/>
+          <input style={{ width: "17%", marginTop: "0px" }} type="time" placeholder="Horário final ex: 11:00"/>
+          <button className={styles.botao} style={{ backgroundColor: 'blue', color: 'white', padding: '5px 10px', border: 'none', borderRadius: '5px',marginLeft: "10px" }} >Confirmar123</button>
         </div>
         {/* <div className={styles.area_button}>
             <button className={styles.botao}>Confirmar123</button>
