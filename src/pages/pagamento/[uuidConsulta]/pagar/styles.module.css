@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    height:300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.area_pagamento_top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.escolhido:hover .nao_escolhido:hover {
+    cursor: pointer;
+}
+
+.area_pagamento_top .escolhido {
+    background-color: rgb(177, 177, 177);
+}
+
+.area_pagamento_top  .nao_escolhido {
+    opacity: 0.9;
+}

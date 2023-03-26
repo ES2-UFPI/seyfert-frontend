@@ -1,0 +1,26 @@
+.board {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.board div {
+    margin-bottom: 10px;
+}
+
+.title_board {
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 10x;
+    color: rgb(43, 69, 212);
+}
+
+.content_board {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
