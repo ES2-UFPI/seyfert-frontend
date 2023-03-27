@@ -4,6 +4,9 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { SeyfertSolicitacaoRequestService } from "@/services/SeyfertSolicitacaoRequestService"
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import ToastyFake from "@/components/toast-fake"
 
 
 const VisualizarSolicitacoes = () => {
@@ -29,32 +32,38 @@ const VisualizarSolicitacoes = () => {
     const registros = [registroFake1, registroFake2, registroFake1]
 
     const [registrosSolicitacoes, updateRegistrosPropostas] = useState<any[]>([]);
+    const [isApagado, setIsApagado] = useState<boolean>(true);
 
     const route = useRouter()
 
     function mudarPagina(UUIDSolicitacao: string){
-    route.push("../../solicitacao/detalhe-solicitacao/"+UUIDSolicitacao);
+        route.push("../../solicitacao/detalhe-solicitacao/"+UUIDSolicitacao);
 
     }
 
-    useEffect(() => {
-        SeyfertSolicitacaoRequestService.listarSolicitacoes({
-            uuidMedico: '4d6032eb-1941-4474-b7a4-4260bb3405fc',
-            dataParaAtendimento: '2023-02-02',
-            nomeEspecialidade: "Ortopedia Teste"
-        })
-      .then((res) => {
-        console.log(res.data.content)
-        updateRegistrosPropostas(res.data.content);
-        alert("Solicitação cadastrada "+res.data);
-      })
-      .catch((erro) => {
-        alert("Erro ao cadastrar solicitação"+erro);
-      });
-    }, [tipoUsuario])
+    const testeToast = () => {
+       setIsApagado(isApagado);
+    }
+
+    // useEffect(() => {
+        
+    //     SeyfertSolicitacaoRequestService.listarSolicitacoes({
+    //         uuidMedico: '4d6032eb-1941-4474-b7a4-4260bb3405fc',
+    //         dataParaAtendimento: '2023-02-02',
+    //         nomeEspecialidade: "Ortopedia Teste"
+    //     })
+    //   .then((res) => {
+    //     updateRegistrosPropostas(res.data.content);
+    //   })
+    //   .catch((erro) => {
+    //     alert("Erro ao cadastrar solicitação"+erro);
+    //   });
+    // }, [tipoUsuario])
     return(
         <Layout titleHeader="Listagem de Solicitações de consulta">
         <div >
+            <ToastyFake isApagado={isApagado}/>
+            <button onClick={testeToast}>Click</button>
             <table>
                 <thead>
                 <tr>

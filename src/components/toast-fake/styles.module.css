@@ -1,0 +1,11 @@
+.container {
+    background-color: rgb(226, 226, 226);
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    position: fixed;
+    top: calc(50vh - 20px);
+    left: calc(50vw - 75px);
+    text-align: center;
+    padding-bottom: 10px;
+}
