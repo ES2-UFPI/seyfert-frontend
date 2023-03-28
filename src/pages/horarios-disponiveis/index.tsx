@@ -17,6 +17,7 @@ const HorariosDisponiveis = () => {
     <div className={styles.container}>
       <div className={styles.container_search}>
         <div className={styles.inputs_search}>
+          {/* teste */}
           <input className={styles.input} type="text" placeholder="Busque por um(a) médico(a)"/>
           
           <input
