@@ -20,7 +20,6 @@ const AgendarConsulta = ({ idHorario }: AgendarConsultaTemplateProps) => {
     }
     
     function confirmarAgendamento(){
-        alert("confirmando");
         route.push("/pagamento/9b7f7f6e-86de-4f2b-b701-34a05c5ba89e/pagar");
     }
 
