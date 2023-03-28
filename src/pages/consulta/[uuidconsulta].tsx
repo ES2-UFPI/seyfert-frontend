@@ -2,7 +2,6 @@ import ButtonAction from "@/components/button-action";
 import Label from "@/components/label";
 import TextArea from "@/components/textarea-action";
 import Layout from "@/layout/Layout";
-import VisualizarConsultaTemplate from "@/templates/visualizar-consulta-template";
 import { VisualizarConsultaResponse } from "@/types/consulta/VisualizarConsultaResponse";
 import { GetServerSideProps } from "next";
 import { useState } from "react";

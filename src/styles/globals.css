@@ -6,12 +6,12 @@
 
 :root {
   --backgroud: rgb(23, 107, 175);
-  --backgroud-home: rgb(214, 222, 255);
+  --backgroud-home: rgb(50, 91, 224);
   --border-color: rgb(168, 168, 168);
-  --text-color: rgb(73, 72, 72);
-  --text-color-link: rgb(26, 50, 185);
-  --text-home-color: rgb(59, 99, 160);
-  --backgroud-button-color: rgb(67, 113, 182);
+  --text-color: rgb(255, 255, 255);
+  --text-color-link: rgb(212, 218, 252);
+  --text-home-color: rgb(255, 255, 255);
+  --backgroud-button-color: rgb(227, 227, 228);
 }
 
 button, input, textarea {
