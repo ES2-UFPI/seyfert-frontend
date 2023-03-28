@@ -32,10 +32,10 @@ const CadastrarSolicitacao = () => {
   return (
     <Layout titleHeader="Cadastro de Solicitacao">
       <div>
-        <p className={styles.p}>Cadastrar Solicitação</p>
+        <p className={styles.titulo}>Cadastrar Solicitação</p>
       </div>
-      <form className={styles.form} method="POST">
-        <table className={styles.table}>
+      <form className={styles.formulario} method="POST">
+        <table className={styles.tabela}>
           <tbody>
             <tr>
               <td>
@@ -109,7 +109,7 @@ const CadastrarSolicitacao = () => {
               <td>
                 <textarea
                   placeholder="Digite aqui o motivo de sua consulta ou algum sintoma que esteja sentindo."
-                  className={styles.textarea}
+                  className={styles.areaTexto}
                   id="infoAdicionais"
                   value={descricao}
                   onChange={(e) => setDescricao(e.target.value)}
@@ -120,7 +120,7 @@ const CadastrarSolicitacao = () => {
               <td colSpan={4}>
                 <center>
                   <button
-                    className={styles.button}
+                    className={styles.botao}
                     type="submit"
                     id="btnCadastrar"
                     onClick={(e) => submitDados(e)}

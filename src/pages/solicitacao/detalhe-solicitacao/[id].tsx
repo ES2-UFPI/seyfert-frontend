@@ -38,16 +38,6 @@ const detalhesSolicitacao = ({ id }: props) => {
         setValor("");
         mudarVisibilidadeDeInputs();
     }
-    // useEffect(() => {
-    //     if(!id) return;
-
-    //     SeyfertConsultaRequestService.visualizarConsulta(id).then(({ data }: AxiosResponse<VisualizarConsultaResponse>) => {
-    //         console.log(data)
-    //         setConsultaResponse(data);
-    //     }).catch(( {response} ) => {
-    //         alert("Deu problema")
-    //     })
-    // }, [id]);
     return(
         <Layout titleHeader="Detalhamento da solicitação de consulta">
         <div>
