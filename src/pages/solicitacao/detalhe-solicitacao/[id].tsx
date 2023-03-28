@@ -17,19 +17,31 @@ type props = {
 }
 
 const detalhesSolicitacao = ({ id }: props) => {
-    const [detalhesSolicitacao, setDetalhesSolicitacao] = useState<SolicitacaoResponse>();
     const [isVisibleInputs, setIsVisibleInputs] = useState<boolean>(false);
     const [propostas, updatePropostas] = useState<DadosPostProposta[]>([]);
-
+    
     const [data, setData] = useState<string>("");
     const [horarioInicial, setHorarioInicial] = useState<string>("");
     const [horarioFinal, setHorarioFinal] = useState<string>("");
     const [valor, setValor] = useState<string>("");
-
+    
     function mudarVisibilidadeDeInputs(){
         setIsVisibleInputs(!isVisibleInputs);
     }
-
+    
+    const solicitacao = {
+        uuid: 'f7da86d7-ab59-4513-8885-b54dba47f142',
+        dataParaAtendimento: '2023-03-01',
+        horaInicial: '10:00',
+        horaFinal: '10:30',
+        descricaoSolicitacao:"Dor nas costas",
+        nomePaciente: "Matheus Webber",
+        nomeEspecialidade: "Ortopedia",
+        sexoPreferivelDoAtendimento: "MASCULINO",
+        situacaoSolicitacao: "SOLICITADA"
+    }
+    
+    const [detalhesSolicitacao, setDetalhesSolicitacao] = useState<any>(solicitacao);
     function cadastrarPropostas(){
         SeyfertPropostaRequestService.cadastrarSolicitacao(propostas, id, '4d6032eb-1941-4474-b7a4-4260bb3405fc',)
       .then((res) => {
@@ -55,16 +67,16 @@ const detalhesSolicitacao = ({ id }: props) => {
         setValor("0");
         mudarVisibilidadeDeInputs();
     }
-    useEffect(() => {
-        if(!id) return;
+    // useEffect(() => {
+    //     if(!id) return;
 
-        SeyfertSolicitacaoRequestService.buscarDetalhesSolicitacao(id).then(response => {
-            console.log(response.data)
-            setDetalhesSolicitacao(response.data);
-        }).catch(( {response} ) => {
-            alert("Falha na requisição")
-        })
-    }, [id]);
+    //     SeyfertSolicitacaoRequestService.buscarDetalhesSolicitacao(id).then(response => {
+    //         console.log(response.data)
+    //         setDetalhesSolicitacao(response.data);
+    //     }).catch(( {response} ) => {
+    //         alert("Falha na requisição")
+    //     })
+    // }, [id]);
 
     return(
         <Layout titleHeader="Detalhamento da solicitação de consulta">
