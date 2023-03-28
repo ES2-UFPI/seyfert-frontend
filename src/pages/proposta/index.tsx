@@ -28,7 +28,6 @@ const CriacaoDeProposta = ({ id } : props) => {
         })
     }, [id]);
     return(
-       // <Layout titleHeader="Criação de proposta">
         <div>
             <h1>Consulta</h1>
             <ul>
@@ -44,7 +43,6 @@ const CriacaoDeProposta = ({ id } : props) => {
             {/* onClick={mudarPagina} */}
             <button  name="button">Confirmar proposta de consulta</button>
         </div>
-       // </Layout>
 
     )
 }

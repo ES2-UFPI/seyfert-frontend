@@ -1,6 +1,7 @@
 import ButtonComponent from "@/components/button";
 import PagamentoDebito from "@/components/pagamento-debito";
 import PagamentoPix from "@/components/pagamento-pix";
+import PagamentoBoleto from "@/components/pagamento-boleto";
 import Layout from "@/layout/Layout";
 import { GetServerSideProps } from "next";
 import { useState } from "react";
@@ -30,7 +31,7 @@ const PagamentoConsulta = ({ uuidConsulta } : PagamentoConsultaProps) => {
             return <PagamentoPix />
         }
         if(tipoPagamento == opcoesPagamento[2]){
-            return (<div><p>Tipo de pagamento {tipoPagamento}</p></div>);
+            return <PagamentoBoleto />;
         }
     }
 
