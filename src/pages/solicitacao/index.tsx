@@ -7,63 +7,39 @@ import { SeyfertSolicitacaoRequestService } from "@/services/SeyfertSolicitacaoR
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import ToastyFake from "@/components/toast-fake"
+import { SolicitacaoResponse } from "@/types/solicitacao/SolicitacaoResponse"
+import { PageResponse } from "@/types/PageResponse"
 
 
 const VisualizarSolicitacoes = () => {
-    const registroFake1 = {
-        nome: "Felipe Santiago",
-        data: "03/03/2023",
-        horarioInicial: "10:00",
-        horarioFinal: "13:00",
-        descricao: "Covid",
-        uuidSolicitacao: "8907d113-9496-4bf2-800a-dce95d489143"
-    };
-    const registroFake2 = {
-        nome: "Járdesson Ribeiro",
-        data: "03/03/2023",
-        horarioInicial: "11:00",
-        horarioFinal: "12:00",
-        descricao: "Dor nas costas",
-        uuidSolicitacao: "2207d113-9496-4bf2-800a-dce95d489144"
-    };
-
+    const route = useRouter();
     const tipoUsuario = "MEDICO";
-
-    const registros = [registroFake1, registroFake2, registroFake1]
-
-    const [registrosSolicitacoes, updateRegistrosPropostas] = useState<any[]>([]);
-    const [isApagado, setIsApagado] = useState<boolean>(true);
-
-    const route = useRouter()
+    const [registrosSolicitacoes, updateRegistrosPropostas] = useState<SolicitacaoResponse[]>([]);
 
     function mudarPagina(UUIDSolicitacao: string){
         route.push("../../solicitacao/detalhe-solicitacao/"+UUIDSolicitacao);
 
     }
 
-    const testeToast = () => {
-       setIsApagado(isApagado);
-    }
+    useEffect(() => {
 
-    // useEffect(() => {
-        
-    //     SeyfertSolicitacaoRequestService.listarSolicitacoes({
-    //         uuidMedico: '4d6032eb-1941-4474-b7a4-4260bb3405fc',
-    //         dataParaAtendimento: '2023-02-02',
-    //         nomeEspecialidade: "Ortopedia Teste"
-    //     })
-    //   .then((res) => {
-    //     updateRegistrosPropostas(res.data.content);
-    //   })
-    //   .catch((erro) => {
-    //     alert("Erro ao cadastrar solicitação"+erro);
-    //   });
-    // }, [tipoUsuario])
+        SeyfertSolicitacaoRequestService.listarSolicitacoesMedico({
+            uuidMedico: 'd9da86d7-ab59-4513-8885-b54dba47f565',
+            dataParaAtendimento: '2023-02-02',
+            nomeEspecialidade: "Ortopedia",
+            page: 0,
+            size: 10
+        })
+      .then((res) => {
+        updateRegistrosPropostas(res.data.content);
+      })
+      .catch((erro) => {
+        alert("Falha na requisição de busca de solicitações")
+      });
+    }, [tipoUsuario])
     return(
         <Layout titleHeader="Listagem de Solicitações de consulta">
         <div >
-            <ToastyFake isApagado={isApagado}/>
-            <button onClick={testeToast}>Click</button>
             <table>
                 <thead>
                 <tr>
