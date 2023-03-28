@@ -1,4 +1,6 @@
 import { VisualizarConsultaResponse } from '@/types/consulta/VisualizarConsultaResponse';
+import { PageResponse } from '@/types/PageResponse';
+import { SolicitacaoResponse } from '@/types/solicitacao/SolicitacaoResponse';
 import { AxiosResponse } from 'axios';
 import apiSeyfert from './api/SeyfertRequestBaseManager';
 
@@ -39,8 +41,36 @@ export class SeyfertSolicitacaoRequestService {
         return apiSeyfert.get(`${baseUrlSolicitacaoService}/medico/${uuidMedico}`, {
             params: {
                 dataParaAtendimento,
-                nomeEspecialidade
+                nomeEspecialidade,
+                
             }
         })
     }
+
+    static async listarSolicitacoesPaciente({ uuiPaciente, dataAtendimento, nomeEspecialidade, size, page } : any): Promise<AxiosResponse<PageResponse<SolicitacaoResponse[]>>> {
+        return apiSeyfert.get(`${baseUrlSolicitacaoService}/paciente/${uuiPaciente}`, {
+            params: {
+                dataParaAtendimento: dataAtendimento,
+                nomeEspecialidade,
+                page,
+                size
+            }
+        })
+    }
+
+    static async listarSolicitacoesMedico({uuidMedico, dataParaAtendimento, nomeEspecialidade, page, size}: any): Promise<AxiosResponse<PageResponse<SolicitacaoResponse[]>>> {
+        return apiSeyfert.get(`${baseUrlSolicitacaoService}/medico/${uuidMedico}`, {
+            params: {
+                dataParaAtendimento,
+                nomeEspecialidade,
+                page,
+                size
+            }
+        })
+    }
+
+    static async buscarDetalhesSolicitacao(uuidSolicitacao: string): Promise<AxiosResponse<SolicitacaoResponse>> {
+        return apiSeyfert.get(`${baseUrlSolicitacaoService}/${uuidSolicitacao}`)
+    }
+
 }
