@@ -9,7 +9,7 @@ const HorariosDisponiveis = () => {
   const route = useRouter();
 
   function openAgendarConsulta(uuidHorario: string){
-    route.push(`/agendar-consulta/${uuidHorario}`)
+    route.push(`/agendar-consulta/${uuidHorario}/consulta`)
   }
 
   return (
