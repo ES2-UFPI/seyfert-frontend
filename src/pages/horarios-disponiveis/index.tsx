@@ -17,7 +17,8 @@ const HorariosDisponiveis = () => {
     <div className={styles.container}>
       <div className={styles.container_search}>
         <div className={styles.inputs_search}>
-          <input type="text" placeholder="Busque por um(a) médico(a)"/>
+          <input className={styles.input} type="text" placeholder="Busque por um(a) médico(a)"/>
+          
           <input
             className={styles.input}
             id="diasdasemana"
@@ -47,12 +48,13 @@ const HorariosDisponiveis = () => {
             <option value="Ortopedista" />
             <option value="Neurologista" />
           </datalist>
-          <input type="time" placeholder="Horário inicial ex: 10:00"/>
-          <input type="time" placeholder="Horário final ex: 11:00"/>
-        </div>
-        <div className={styles.area_button}>
+          <input className={styles.input} type="time" placeholder="Horário inicial ex: 10:00"/>
+          <input className={styles.input} type="time" placeholder="Horário final ex: 11:00"/>
+       
             <ButtonComponent color="rgb(29, 66, 230)" childrenColor="rgb(255, 255, 255)">Confirmar</ButtonComponent>
+     
         </div>
+       
       </div>
       <div className={styles.container_list}>
       <table className={styles.tabela}>

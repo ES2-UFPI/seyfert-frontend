@@ -3,6 +3,7 @@
   margin: auto;
   border-collapse: collapse;
   border-spacing: 30px;
+  text-align: left;
 }
 
 .coluna {
@@ -26,5 +27,5 @@
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 0px;
 }
