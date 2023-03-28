@@ -1,3 +1,21 @@
+@font-face {
+    font-family: Poppins-Black;
+    src: url(../../public/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../../public/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../../public/Poppins/Poppins-SemiBold.ttf);
+}
+
+.container {
+    font-family: 'Poppins-SemiBold' !important;
+    transition: 0.6s;
+} 
+
 .container {
     background-color: var(--backgroud-home);
     width: 100%;
@@ -12,6 +30,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background: #efefef;
 }
 
 .seyfert {
@@ -30,6 +49,7 @@
     text-align: center;
     font-size: 5rem;
     color: var(--text-home-color);
+    color: rgb(51 92 227);
 }
 
 .container_login {
@@ -41,6 +61,7 @@
     justify-content: center;
     border-left: 1px solid var(--border-color);
     padding: 0 20px 10rem 20px;
+  
 }
 
 .container_login .container_banner {
@@ -85,13 +106,14 @@
     cursor: pointer;
     border-radius: 5px;
     background-color: var(--backgroud-button-color);
-    color: rgb(185, 169, 23);
+    color: rgb(126, 126, 124);
     font-weight: bold;
     font-size: 1.5rem;
+    transition: 0.5s;
 }
 
 .container_login button:hover {
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 

@@ -3,8 +3,22 @@
   margin: auto;
   border-collapse: collapse;
   border-spacing: 30px;
+  text-align: left;
 }
 
+.input {
+  padding: 9px 8px;
+  border-radius: 9px;
+  border: #bbb;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border: white solid 2px;
+}
+
+.input:focus-visible{
+  outline: none;
+  border: #c9c9c9 solid 2px;
+}
 .coluna {
   padding: 0.5rem;
   text-align: center;
@@ -21,10 +35,10 @@
   background-color: #c6d4f3;
   color: #000;
   border: none;
-  border-radius: 0.5rem;
-  padding: 0.25rem 0.5rem;
+  border-radius: 9px;
+  padding: 0.5rem 0.5rem;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 0px;
 }
